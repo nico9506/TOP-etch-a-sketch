@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Etch-a-Sketch</title>
+        <link rel="stylesheet" href="style.css" />
+    </head>
+    <body>
+        <h1>Etch-a-Sketch</h1>
+
+        <div class="container"></div>
+
+        <div class="controls">
+            <button id="btn-clear">Clear</button>
+
+            <input
+                type="range"
+                id="boardSizeInput"
+                name="boardSizeInput"
+                min="1"
+                max="32"
+                value="16"
+            />
+            <label for="boardSizeInput"
+                >Board size: <output id="boardSizeText"></output
+            ></label>
+        </div>
+
+        <div class="controls">
+            <div class="sub-control">
+                <button id="btn-color">Color</button>
+            </div>
+            <div class="sub-control">
+                <button id="btn-rainbow">Rainbow</button>
+            </div>
+            <div class="sub-control">
+                <button id="btn-scale">Scale</button>
+            </div>
+            <div class="sub-control">
+                <button id="btn-eraser">Eraser</button>
+            </div>
+        </div>
+
+        <script src="main.js"></script>
+    </body>
+</html>
